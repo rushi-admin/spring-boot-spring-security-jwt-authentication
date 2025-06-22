@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git branch: 'main', url: "${env.GIT_REPO}"
+                git branch: 'master', url: "${env.GIT_REPO}"
             }
         }
 
